@@ -1,0 +1,31 @@
+{
+  "modules-center": [
+    "clock",
+    "custom/pomodoro",
+    "custom/dnd"
+  ],
+  "custom/pomodoro": {
+    "exec": "waybar-pomodoro watch --text-only",
+    "return-type": "json",
+    "format": "{icon}  {text}",
+    "exec-on-event": false,
+    "restart-interval": 2,
+    "on-click": "waybar-pomodoro start",
+    "on-click-right": "waybar-pomodoro pause",
+    "on-click-middle": "waybar-pomodoro reset",
+    "justify": "center",
+    "format-icons": {
+      "focus-waiting": "󰐊",
+      "focus-running": "󰔟",
+      "focus-paused": "󰏤",
+      "short-break-waiting": "󰐊",
+      "short-break-running": "󰅶",
+      "short-break-paused": "󰏤",
+      "long-break-waiting": "󰐊",
+      "long-break-running": "󰒲",
+      "long-break-paused": "󰏤",
+      "reset-armed": "󰀦",
+      "error": "󰀦"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+# durations in minutes
+focus_minutes = 25
+short_break_minutes = 5
+long_break_minutes = 30
+focuses_before_long_break = 4
+notifications = true

@@ -1,0 +1,14 @@
+/target/
+/result
+/result-*
+.direnv/
+/integration/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+*.swp
+*.swo
+*~
+.DS_Store
